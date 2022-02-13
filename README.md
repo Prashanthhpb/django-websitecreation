@@ -277,8 +277,6 @@ Now go to **http://127.0.0.1:8000/ **from your browser. You should see like this
 
 Thanks for reading this.
 
-        ![Screenshot (54)](https://user-images.githubusercontent.com/99570304/153757946-8af63865-8384-4353-823f-94d8e4c827e4.png)
-
         
         
         
