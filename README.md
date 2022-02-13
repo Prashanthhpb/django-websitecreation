@@ -139,7 +139,8 @@ Now run this command to start the development server:
 Now go to http://127.0.0.1:8000/admin/ from your browser, log in and add some products and feedback and check that everything works just fine.
 
 
-![456](https://user-images.githubusercontent.com/99570304/153753706-34951c2e-35b1-4bd0-9b11-fd320ffb1c13.png)
+![Screenshot (54)](https://user-images.githubusercontent.com/99570304/153758053-1f49134e-6530-46f8-8151-399981bfe132.png)
+
 
 
 ScreenshotScreenshot: list of feedback at django admin site
@@ -247,11 +248,12 @@ urlpatterns = [
 ```
 Now, edit the feedback/urls.py if like this way:
 
-```from django.conf.urls import include, url
+```from django.urls import include, re_path
 from django.contrib import admin
 
 urlpatterns = [
-url(r'^admin/', admin.site.urls),
+    re_path(r'^', include('form.urls')),
+    re_path(r'^admin/', admin.site.urls),
 ]
 ```
 You can learn more about django URL dispatcher.
@@ -266,11 +268,17 @@ Now go to **http://127.0.0.1:8000/ **from your browser. You should see like this
 ![123](https://user-images.githubusercontent.com/99570304/153753850-cc28f0a0-2038-4fe0-baa6-59072d9cd434.png)
 
 
-Screenshot: feedback form
+# output screenshots:
+
+![Screenshot (58)](https://user-images.githubusercontent.com/99570304/153759464-adfc37d2-ea35-49a6-a282-d2fc8a17d5b6.png)
+
+
+
 
 Thanks for reading this.
 
-        
+        ![Screenshot (54)](https://user-images.githubusercontent.com/99570304/153757946-8af63865-8384-4353-823f-94d8e4c827e4.png)
+
         
         
         
